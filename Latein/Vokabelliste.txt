@@ -1,9 +1,9 @@
 cantera
-videre
-legere
-sentira
-audire
-laudo
+videre 2
+legere 3 
+sentire 4
+audire 4
+laudo 1
 speco
 voco
 obligo
@@ -13,10 +13,10 @@ nomino
 damnare
 interrogo
 laboro
-aspicere
-ducere
-ambulo
-moveo
+aspicere 3
+ducere 3 
+ambulo 1
+moveo 2
 habere 2
 studeo 2
 vincere
