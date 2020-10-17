@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{csquotes}
+\usepackage[x11names]{xcolor}
+\usepackage{framed}
+\usepackage{quoting}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{bussproofs}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\begin{prooftree}
+	\AxiomC{$k \in $ Mensch,}
+	\AxiomC{getAge($k$) $<$ 7}
+	\BinaryInfC{$k$ ist handlungsunfähig}
+\end{prooftree}
+\begin{prooftree}
+	\AxiomC{$k \in $ Mensch,}
+	\AxiomC{getAge($k$) $<$ 14} 
+	\AxiomC{sex($k$) = male }
+	\TrinaryInfC{$k$ ist unmündig}
+\end{prooftree}
+
+\begin{prooftree}
+	\AxiomC{$k \in $ Mensch,}
+	\AxiomC{getAge($k$) $>$ 12} 
+	\AxiomC{sex($k$) = female }
+	\TrinaryInfC{$k$ ist unbeschränkt Handlungsfähig}
+\end{prooftree}
+
+\begin{prooftree}
+	\AxiomC{$k \in $ Mensch,}
+	\AxiomC{getAge($k$) $>$ 14} 
+	\AxiomC{sex($k$) = male }
+	\TrinaryInfC{$k$ ist unbeschränkt Handlungsfähig}
+\end{prooftree}
+
+\begin{prooftree}
+	\AxiomC{$k \in $ Mensch,}
+	\AxiomC{getAge($k$) $<$ 25} 
+	\BinaryInfC{$k$ ist speziell geschützt}
+\end{prooftree}
+
+\begin{prooftree}
+	\AxiomC{$s \in $ Sache, m $\in$ Mensch,}
+	\AxiomC{hat\_animus($m$,$s$)}
+	\AxiomC{hat\_corpus($m$,$s$)}
+	\TrinaryInfC{$m$ hat Besitz}
+\end{prooftree}
+
+
+\end{document}
